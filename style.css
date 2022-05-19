@@ -1,0 +1,559 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-left: 22.5%;
+  padding-right: 22.5%;
+  background-color: white;
+  color: black;
+  transition: 0.75s ease-in-out;
+}
+
+.dark-mode {
+  background-color: #151515;
+  color: #dfdfdf;
+  transition: 0.75s ease-in-out;
+}
+
+button {
+  color: #000000;
+  border: none;
+  transition: 0.75s ease-in-out;
+  font-family: Trebuchet MS;
+  padding:0px;
+}
+
+.dark-mode button {
+  color: #dfdfdf;
+  transition: 0.75s ease-in-out;
+}
+
+.dark-mode #search-bar input {
+  background-color: transparent;
+  color: #dfdfdf;
+}
+
+.dark-mode #assignment-add input {
+  background-color: transparent;
+  color: #dfdfdf;
+}
+
+.dark-mode #assignment-add select {
+  border-bottom: 2px solid #dfdfdf;
+  color: #dfdfdf;
+}
+
+.dark-mode #config-settings input {
+  background-color: transparent;
+  color: #dfdfdf;
+}
+
+.dark-mode #config-settings select {
+  border-bottom: 2px solid #dfdfdf;
+  color: #dfdfdf;
+}
+
+.dark-mode form #search-bar {
+  border-bottom: 2px solid #dfdfdf;
+  background-color: transparent;
+}
+
+.dark-mode #search-bar i {
+  background-color: #151515;
+  color: #dfdfdf;
+  opacity: 1;
+}
+
+#fish-splash {
+  text-align: center;
+  display: block;
+  padding: 40px;
+}
+
+.dark-mode #assignment-add input {
+  background-color: transparent;
+  border-bottom: 2px solid #dfdfdf;
+}
+
+.dark-mode #config-settings input {
+  background-color: transparent;
+  border-bottom: 2px solid #dfdfdf;
+}
+
+.dark-mode option {
+  background-color: #151515;
+}
+
+.text {
+  animation: open 2s ease-in-out;
+  position: relative;
+  text-align: center;
+  width: auto;
+  opacity: 1;
+}
+
+.title {
+  animation: open 1.5s ease-in-out;
+  position: relative;
+  text-align: center;
+  width: auto;
+  padding: auto;
+  opacity: 1;
+  text-shadow: 0 0 10px #ffffffc0, 0 0 20px #d6d6d6;
+}
+
+hr.line {
+  width: 75%;
+  animation: expand .75s ease-in-out;
+}
+hr.textline {
+  width: 65%;
+  animation: open .75s ease-in-out;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+
+@keyframes expand {
+  from {width: 0%;}
+    to {width: 75%;}
+}
+
+@keyframes expand2 {
+  0% {width: 0%;}
+  25% {width: 0%;}
+  100% {width: 95%;}
+}
+
+@keyframes expand3 {
+  from {width: 5%;}
+    to {width: 75%;}
+}
+
+@keyframes open {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes icon {
+  from {display: hidden;}
+    to {display: inline;}
+}
+
+@keyframes pulse {
+  0% {background-color: rgba(0,0,0,1);}
+  25% {background-color: rgba(0,0,0,0.5);}
+  100% {background-color: rgba(0,0,0,0.35);}
+}
+
+a {
+  color:#5555FF;
+  animation: expand .75s ease-in-out;
+}
+
+.right .lyrics p {
+  margin: 0px;
+  text-align: left;
+}
+.left .lyrics p {
+  margin: 0px;
+  text-align: right;
+}
+
+.lyrics {
+  width:460px;
+}
+
+.collapsible {
+  background: none;
+  cursor: pointer;
+  padding-bottom: 18px;
+  width: 95%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:after {
+  content: '[ \002B  ]';
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "[ \2212  ]";
+}
+
+.content {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .75s ease-in-out;
+}
+
+.landing-link .btn {
+  margin-top: 15px;
+  width: 125px;
+  height: 125px;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+  vertical-align: text-top;
+  color: #151515;
+  background-color: #efefef;
+}
+
+.landing-link .btn:hover {
+  width: 135px;
+  height: 135px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  transition: 0.3s ease-in-out;
+}
+
+#changelog {
+  transition: 0.75s cubic-bezier(0.22, 0.61, 0.36, 1)
+}
+
+#feedback {
+  transition: 0.75s cubic-bezier(0.22, 0.61, 0.36, 1)
+}
+
+.landing-link i {
+  font-size: 32px;
+  transition: 0.3s ease-in-out background-color;
+}
+
+.landing-buttons-dark-mode .btn {
+  color: #dfdfdf;
+  background-color: #101010;
+  transition: 0.3s ease-in-out;
+}
+
+#search-bar input {
+  width: 95%;
+  border: none;
+  outline: none !important;
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  transition: 0.75s ease-in-out;
+  background-color: transparent;
+  animation: expand2 .75s ease-in-out;
+}
+
+form #search-bar {
+  border-width: thick;
+  animation: expand3 .75s ease-in-out;
+  width: 75%;
+  margin: auto;
+  border-bottom: 2px solid #101010;
+  transition: 0.75s ease-in-out;
+  background-color: transparent;
+}
+
+#search-bar i {
+  font-size: 20px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.75s ease-in-out;
+  opacity: 1;
+}
+
+#assignment-add i {
+  font-size: 20px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.75s ease-in-out;
+  opacity: 1;
+}
+
+#assignment-add b {
+  font-size: 20px;
+}
+
+#assignment-add input {
+  width: 15%;
+  margin: 10px;
+  border: none;
+  outline: none !important;
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  transition: 0.75s ease-in-out;
+  background-color: transparent;
+  animation: expand2 .75s ease-in-out;
+  border-bottom: 2px solid #101010;
+}
+
+#assignment-add #namebox {
+  width: 25%;
+}
+
+#assignment-add button {
+  background-color: rgba(0,0,0,0.35);
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  cursor: pointer;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+  height: 63px;
+  margin: auto;
+}
+
+button:active {
+  animation: pulse 0.75s
+}
+
+.submit {
+  background-color: rgba(0,0,0,0.35);
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  cursor: pointer;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+  height: 63px;
+  margin: auto;
+}
+
+.submit:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+#assignment-add button:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+#assignment-add select {
+  margin: 10px;
+  border: none;
+  outline: none !important;
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  transition: 0.75s ease-in-out;
+  background-color: transparent;
+  animation: expand2 .75s ease-in-out;
+  border-bottom: 2px solid #101010;
+}
+
+#config-settings .label {
+  font-size: 20px;
+}
+
+#config-settings input {
+  width: 15%;
+  margin: 10px;
+  border: none;
+  outline: none !important;
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  transition: 0.75s ease-in-out;
+  background-color: transparent;
+  animation: open .75s ease-in-out;
+  border-bottom: 2px solid #101010;
+}
+
+#config-settings #namebox {
+  width: 25%;
+}
+
+#config-settings select {
+  margin: 10px;
+  border: none;
+  outline: none !important;
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  transition: 0.75s ease-in-out;
+  background-color: transparent;
+  animation: open .75s ease-in-out;
+  border-bottom: 2px solid #101010;
+}
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    animation: open .75s ease-in-out;
+}
+input:hover::-webkit-input-placeholder {
+    opacity: .75;
+    transition: 0.3s ease-in-out;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0.25;
+    transition: 0.3s ease-in-out;
+}
+
+.subjects li {
+  width: 45%;
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  text-align: left;
+  transition: width 0.35s ease-in-out, box-shadow 0.15s ease-in-out;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+  max-height: 300px;
+}
+
+.subjects li:hover {
+  width: 48%;
+}
+
+.subjects span {
+  float: right;
+  padding-right: 10px;
+}
+
+.subjects span:hover {
+  cursor: pointer
+}
+
+.subject1 {--boxShadowColor--: #000; border-left: 4px solid var(--boxShadowColor--)} /**/
+.subject2 {--boxShadowColor--: #000; border-left: 4px solid var(--boxShadowColor--)} /**/
+.subject3 {--boxShadowColor--: #000; border-left: 4px solid var(--boxShadowColor--)} /**/
+.subject4 {--boxShadowColor--: #000; border-left: 4px solid var(--boxShadowColor--)} /**/
+.subject5 {--boxShadowColor--: #000; border-left: 4px solid var(--boxShadowColor--)} /**/
+.subject6 {--boxShadowColor--: #000; border-left: 4px solid var(--boxShadowColor--)} /**/
+.subject7 {--boxShadowColor--: #000; border-left: 4px solid var(--boxShadowColor--)} /**/
+.subject8 {--boxShadowColor--: #000; border-left: 4px solid var(--boxShadowColor--)} /**/
+.subject9 {--boxShadowColor--: #000; border-left: 4px solid var(--boxShadowColor--)} /**/
+.subject10 {--boxShadowColor--: #000; border-left: 4px solid var(--boxShadowColor--)} /**/
+
+.subject1:hover {box-shadow: -10px 0 8px -2px var(--boxShadowColor--), 0 0 8px -2px var(--boxShadowColor--);}
+.subject2:hover {box-shadow: -10px 0 8px -2px var(--boxShadowColor--), 0 0 8px -2px var(--boxShadowColor--);}
+.subject3:hover {box-shadow: -10px 0 8px -2px var(--boxShadowColor--), 0 0 8px -2px var(--boxShadowColor--);}
+.subject4:hover {box-shadow: -10px 0 8px -2px var(--boxShadowColor--), 0 0 8px -2px var(--boxShadowColor--);}
+.subject5:hover {box-shadow: -10px 0 8px -2px var(--boxShadowColor--), 0 0 8px -2px var(--boxShadowColor--);}
+.subject6:hover {box-shadow: -10px 0 8px -2px var(--boxShadowColor--), 0 0 8px -2px var(--boxShadowColor--);}
+.subject7:hover {box-shadow: -10px 0 8px -2px var(--boxShadowColor--), 0 0 8px -2px var(--boxShadowColor--);}
+.subject8:hover {box-shadow: -10px 0 8px -2px var(--boxShadowColor--), 0 0 8px -2px var(--boxShadowColor--);}
+.subject9:hover {box-shadow: -10px 0 8px -2px var(--boxShadowColor--), 0 0 8px -2px var(--boxShadowColor--);}
+.subject10:hover {box-shadow: -10px 0 8px -2px var(--boxShadowColor--), 0 0 8px -2px var(--boxShadowColor--);}
+
+.subjectP {--boxShadowColor--: #ff0055; border-left: 4px solid var(--boxShadowColor--);}
+.subjectP:hover {box-shadow: -10px 0 8px -2px var(--boxShadowColor--), 0 0 8px -2px var(--boxShadowColor--);}
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7ptsv9');
+  src:  url('fonts/icomoon.eot?7ptsv9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7ptsv9') format('truetype'),
+    url('fonts/icomoon.woff?7ptsv9') format('woff'),
+    url('fonts/icomoon.svg?7ptsv9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-none:before {
+  content: "\e900";
+  opacity: 0;
+}
+.icon-canvas:before {
+  content: "\e900";
+}
+.icon-powerschool:before {
+  content: "\e901";
+}
+.icon-spotify:before {
+  content: "\e902";
+}
+.icon-twitter:before {
+  content: "\e903";
+}
+.icon-youtube:before {
+  content: "\e904";
+}
+.icon-collegeboard:before {
+  content: "\e905";
+}
+.icon-khan-academy:before {
+  content: "\e906";
+}
+.icon-amazon:before {
+  content: "\ea87";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-google-drive:before {
+  content: "\ea8f";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitch:before {
+  content: "\ea9f";
+}
+.icon-windows8:before {
+  content: "\eac2";
+}
+.icon-delicious:before {
+  content: "\eacd";
+}
+.icon-libreoffice:before {
+  content: "\eae3";
+}
+.icon-home:before {
+  content: "\e907";
+}
+.icon-music:before {
+  content: "\e911";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-cloud:before {
+  content: "\e9c1";
+}
+.icon-earth:before {
+  content: "\e9ca";
+}
+.icon-star:before {
+  content: "\e9d9";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-steam:before {
+  content: "\eaac";
+}
+.icon-pinterest:before {
+  content: "\ead2";
+}
+.icon-paypal:before {
+  content: "\ead8";
+}
+
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
